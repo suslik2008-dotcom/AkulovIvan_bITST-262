@@ -15,7 +15,7 @@ double readfile(); // Фунуция для чтения файлов. Буде�
 int main(void)
 {
 	setlocale(LC_ALL, "RUS");
-	double x, n = 40;
+	double x;
 	printf("Здравствуйте, пользователь. Введите давление(в бар) >> ");
 	scanf("%lf", &x);
 	double q = function(x);
