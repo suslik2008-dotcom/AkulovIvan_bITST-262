@@ -3,9 +3,8 @@
 1. Начало
 2. Вводим давление x(В бар). Нормальный диапазон: 0.5-2 бар
 3. Рассчитываем полученную теплоту с помощью одного из 3 формул в зависимости от значения x  
-   Если х < 0.5: q = pow(x-0.5, 2) + 8  
-   Если 0.5 <= x <= 2: q = 2 * pow(x+0.75, 0.5) + 42  
-   Если x > 2: q = 3*x + 54  
+   <img width="317" height="95" alt="image" src="https://github.com/user-attachments/assets/c4e93dd3-5b89-45be-bde2-aedef93935a6" />
+
 4. Выводим полученное значение теплоты q
 <img width="692" height="713" alt="image" src="https://github.com/user-attachments/assets/61842ffa-7924-47b6-a2e2-f0ba8ae30521" />
 
