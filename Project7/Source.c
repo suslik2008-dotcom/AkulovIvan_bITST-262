@@ -3,6 +3,9 @@
 #include <math.h>
 #include <stdio.h>
 #include <locale.h>
+#define p_min 0.5
+#define p_max 2.0
+#define max_delt_p 5.0
 
 double function(double x); // Функция для рассчёта q
 double control(double q1, double q2); // Функция для контроля состояния
@@ -13,7 +16,7 @@ int main(void)
 {
 	setlocale(LC_ALL, "RUS");
 	double x, n = 40;
-	printf("Введите давление(в бар) >> ");
+	printf("Здравствуйте, пользователь. Введите давление(в бар) >> ");
 	scanf("%lf", &x);
 	double q = function(x);
 	printf("Q=%lf", q);
@@ -31,12 +34,12 @@ double signal(int n) {
 }
 
 double control(double q1, double q2) {
-	if (fabs(q1 - q2) <= 5.0) { return signal(1); }
+	if (fabs(q1 - q2) <= max_delt_p) { return signal(1); }
 	return signal(2);
 }
 
 double function(double x) {
-	if (x < 0.5) { return pow(x - 0.5, 2) + 8; } //Эквивалентно q= pow(x-0.5, 2)/1 + 8
-	if (x >= 0.5 && x <= 2) { return 2 * pow(x + 0.75, 0.5) + 42; }//Эквивалентно q= 2 * pow(x-1.25+2, 0.5) + 42
-	if (x > 2) { return 3 * x + 54; } //Эквивалентно q= 3*(x-2) + 60
+	if (x < p_min) { return pow(x - 0.5, 2) + 8; } //Эквивалентно q= pow(x-0.5, 2)/1 + 8
+	if (x >= p_min && x <= p_max) { return 2 * pow(x + 0.75, 0.5) + 42; }//Эквивалентно q= 2 * pow(x-1.25+2, 0.5) + 42
+	if (x > p_max) { return 3 * x + 54; } //Эквивалентно q= 3*(x-2) + 60
 }
