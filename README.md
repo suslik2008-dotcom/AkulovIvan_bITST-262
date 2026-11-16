@@ -7,7 +7,8 @@
 
 
 4. Выводим полученное значение теплоты q
-<img width="657" height="672" alt="image" src="https://github.com/user-attachments/assets/d0cad512-a03f-4f2e-b321-3b1f18b1e912" />
+<img width="659" height="662" alt="image" src="https://github.com/user-attachments/assets/c512070d-ba38-4859-b03a-3bf863d53298" />
+
 
 Расчёты:  
 для x = 0.3: q = pow(0.3-0.5, 2) + 8 = 0.04 + 8 = 8.04  
