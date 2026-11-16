@@ -8,6 +8,7 @@
 
 4. Выводим полученное значение теплоты q
 <img width="659" height="662" alt="image" src="https://github.com/user-attachments/assets/c512070d-ba38-4859-b03a-3bf863d53298" />
+<img width="195" height="686" alt="image" src="https://github.com/user-attachments/assets/a966eeda-c18f-4751-b3f2-1f5f07fae6cd" />
 
 
 Расчёты:  
